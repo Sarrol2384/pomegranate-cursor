@@ -23,10 +23,8 @@ export function LookbookGrid() {
           </FadeIn>
 
           <div className="mt-14 grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
-            {garments.map((garment, index) => (
-              <FadeIn key={garment.id} delay={(index % 3) * 0.08}>
-                <GarmentCard garment={garment} onSelect={setSelected} />
-              </FadeIn>
+            {garments.map((garment) => (
+              <GarmentCard key={garment.id} garment={garment} onSelect={setSelected} />
             ))}
           </div>
         </div>

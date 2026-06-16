@@ -13,7 +13,7 @@ export function GarmentCard({ garment, onSelect }: GarmentCardProps) {
     <button
       type="button"
       onClick={() => onSelect(garment)}
-      className="group w-full cursor-pointer text-left"
+      className="group w-full cursor-pointer touch-manipulation text-left"
       aria-label={`View details for ${garment.name}`}
     >
       <div className="relative aspect-[3/4] overflow-hidden bg-border">
