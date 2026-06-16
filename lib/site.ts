@@ -24,4 +24,10 @@ export const site = {
     defaultMessage: whatsappMessage,
     url: `https://wa.me/27729773576?text=${encodeURIComponent(whatsappMessage)}`,
   },
+  hours: [
+    "Monday – Thursday: 9am – 5pm (closed for lunch 1pm – 1:30pm)",
+    "Friday: 9am – closes between 1pm and 2pm",
+    "Saturday: 9am – 3pm",
+    "Sunday: By appointment only",
+  ],
 } as const;

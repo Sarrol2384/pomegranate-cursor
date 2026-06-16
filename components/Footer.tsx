@@ -84,7 +84,9 @@ export function Footer() {
               ))}
             </ul>
             <p className="mt-6 text-sm text-muted">
-              Studio visits by appointment.
+              {site.hours[0]}
+              <br />
+              {site.hours[3]}
               <br />
               <Link href="/contact" className="text-accent hover:underline">
                 Get in touch

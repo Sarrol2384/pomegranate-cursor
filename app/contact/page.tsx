@@ -73,10 +73,12 @@ export default function ContactPage() {
                   <p className="text-sm font-medium uppercase tracking-[0.2em] text-secondary">
                     Hours
                   </p>
-                  <p className="mt-1">
-                    Studio visits by appointment only.
-                    <br />
-                    Tuesday – Saturday, 10am – 4pm
+                  <p className="mt-1 space-y-1">
+                    {site.hours.map((line) => (
+                      <span key={line} className="block">
+                        {line}
+                      </span>
+                    ))}
                   </p>
                 </div>
               </div>
