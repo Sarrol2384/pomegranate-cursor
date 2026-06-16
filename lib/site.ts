@@ -5,6 +5,7 @@ export const site = {
   name: "Promegranate Boutique",
   shortName: "Promegranate",
   tagline: "Handmade clothing, one piece at a time.",
+  madeIn: "Made in South Africa",
   email: "pomegranate@vonwillingh.co.za",
   address: {
     venue: "The Junction",

@@ -13,6 +13,7 @@ const prices = {
   slateBlue: 1180,
   medallion: 1450,
   navy: 980,
+  lace: 1680,
 } as const;
 
 export function formatPrice(amount: number): string {
@@ -110,14 +111,59 @@ export const garments: Garment[] = [
     price: prices.medallion,
   },
   {
+    id: "lace-bomber",
+    name: "Floral Lace Bomber",
+    note: "Sheer lace · Hand-embroidered · Made in South Africa",
+    description:
+      "A statement bomber in sheer white lace with bold black floral embroidery and a delicate polka-dot mesh. Black ribbed collar, zip front, and scalloped hem — handmade in our Strand studio.",
+    image: "/products/lace-bomber-front.png",
+    price: prices.lace,
+    featured: true,
+  },
+  {
+    id: "lace-bomber-open",
+    name: "Floral Lace Bomber",
+    note: "Sheer lace · Worn open",
+    description:
+      "The lace bomber worn open over a black base layer — the embroidery and sheer fabric create depth and movement with every step.",
+    image: "/products/lace-bomber-open.png",
+    price: prices.lace,
+  },
+  {
+    id: "lace-bomber-back",
+    name: "Floral Lace Bomber",
+    note: "Sheer lace · Back view",
+    description:
+      "The back view shows the full sweep of hand-embroidered florals across the shoulders and sleeves — each jacket finished with care in small batches.",
+    image: "/products/lace-bomber-back.png",
+    price: prices.lace,
+  },
+  {
     id: "navy-zip-bomber",
     name: "Navy Zip Bomber",
-    note: "Soft jersey · Everyday essential",
+    note: "Soft jersey · All seasons",
     description:
       "A deep navy zip-up with a ribbed varsity collar and matching zip. Soft against the skin, structured at the cuffs — the kind of piece you reach for every day.",
+    image: "/products/navy-main.png",
+    price: prices.navy,
+  },
+  {
+    id: "navy-zip-bomber-detail",
+    name: "Navy Zip Bomber",
+    note: "Soft jersey · Collar detail",
+    description:
+      "A close look at the ribbed collar and silver zip — soft navy jersey, finished by hand in our Strand studio.",
+    image: "/products/navy-close-up-new.png",
+    price: prices.navy,
+  },
+  {
+    id: "navy-zip-bomber-close",
+    name: "Navy Zip Bomber",
+    note: "Soft jersey · Close-up",
+    description:
+      "The navy bomber up close — relaxed fit, ribbed cuffs, and a zip that sits flat against the body.",
     image: "/products/navy-close-up.png",
     price: prices.navy,
-    featured: true,
   },
 ];
 

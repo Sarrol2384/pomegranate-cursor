@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { MadeInBadge } from "@/components/MadeInBadge";
 
 type HeroProps = {
   title: string;
@@ -9,6 +10,7 @@ type HeroProps = {
   imageSrc: string;
   imageAlt: string;
   compact?: boolean;
+  showMadeIn?: boolean;
 };
 
 export function Hero({
@@ -19,6 +21,7 @@ export function Hero({
   imageSrc,
   imageAlt,
   compact = false,
+  showMadeIn = false,
 }: HeroProps) {
   return (
     <section
@@ -36,8 +39,9 @@ export function Hero({
       />
       <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/30 to-foreground/10" />
 
-      <div className="grain relative z-10 w-full">
+      <div className="relative z-10 w-full">
         <div className="container-main pb-16 pt-32 md:pb-24 md:pt-40">
+          {showMadeIn && <MadeInBadge variant="light" className="mb-6" />}
           <h1 className="max-w-3xl text-5xl text-surface md:text-7xl lg:text-8xl">
             {title}
           </h1>

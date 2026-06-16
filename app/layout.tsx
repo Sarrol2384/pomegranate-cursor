@@ -23,11 +23,11 @@ export const metadata: Metadata = {
     template: `%s | ${site.shortName}`,
   },
   description:
-    `${site.tagline} Discover the ${site.shortName} lookbook and the story behind every stitch.`,
+    `${site.tagline} ${site.madeIn}. Discover the ${site.shortName} lookbook and the story behind every stitch.`,
   openGraph: {
     title: `${site.name} — Handmade Clothing`,
     description:
-      `${site.tagline} Discover the ${site.shortName} lookbook and the story behind every stitch.`,
+      `${site.tagline} ${site.madeIn}. Discover the ${site.shortName} lookbook and the story behind every stitch.`,
     type: "website",
     locale: "en_ZA",
     siteName: site.name,
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${site.name} — Handmade Clothing`,
     description:
-      `${site.tagline} Discover the ${site.shortName} lookbook and the story behind every stitch.`,
+      `${site.tagline} ${site.madeIn}. Discover the ${site.shortName} lookbook and the story behind every stitch.`,
   },
 };
 

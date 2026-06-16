@@ -6,17 +6,14 @@ import { formatPrice, type Garment } from "@/lib/products";
 type GarmentCardProps = {
   garment: Garment;
   onSelect: (garment: Garment) => void;
-  index?: number;
 };
 
-export function GarmentCard({ garment, onSelect, index = 0 }: GarmentCardProps) {
-  const offset = index % 2 === 1 ? "md:mt-12" : "";
-
+export function GarmentCard({ garment, onSelect }: GarmentCardProps) {
   return (
     <button
       type="button"
       onClick={() => onSelect(garment)}
-      className={`group w-full cursor-pointer text-left ${offset}`}
+      className="group w-full cursor-pointer text-left"
       aria-label={`View details for ${garment.name}`}
     >
       <div className="relative aspect-[3/4] overflow-hidden bg-border">

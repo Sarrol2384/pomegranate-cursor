@@ -1,8 +1,8 @@
 /** Site imagery — product photos live in /products and are defined in lib/products.ts */
 export const images = {
   home: {
-    hero: "/products/pinstripe-main.png",
-    heroAlt: "Handmade pinstripe bomber jacket from Promegranate Boutique",
+    hero: "/products/reversible-bomber-hero.png",
+    heroAlt: "Reversible bomber jacket collection — solid and pinstripe sides, handmade by Promegranate Boutique",
     maker: "/products/pinstripe-close-up.png",
     makerAlt: "Close-up of a handmade pinstripe jacket",
   },

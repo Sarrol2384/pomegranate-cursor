@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FadeIn } from "@/components/FadeIn";
-import { Hero } from "@/components/Hero";
+import { HomeHero } from "@/components/HomeHero";
 import { SectionHeading } from "@/components/SectionHeading";
 import { formatPrice, getFeaturedGarments } from "@/lib/products";
 import { images } from "@/lib/images";
@@ -12,14 +12,7 @@ export default function Home() {
 
   return (
     <>
-      <Hero
-        title={site.name}
-        subtitle={site.tagline}
-        ctaLabel="View the Lookbook"
-        ctaHref="/lookbook"
-        imageSrc={images.home.hero}
-        imageAlt={images.home.heroAlt}
-      />
+      <HomeHero />
 
       <section className="py-20 md:py-28">
         <div className="container-main">
@@ -27,7 +20,7 @@ export default function Home() {
             <SectionHeading
               eyebrow="Featured"
               title="From the collection"
-              description="Each piece is designed, cut, and sewn by hand in our studio — limited runs, thoughtful details, fabrics chosen for how they feel against the skin."
+              description="Each piece is designed, cut, and sewn by hand in our Strand studio — a proudly South African boutique with limited runs and thoughtful details."
             />
           </FadeIn>
 

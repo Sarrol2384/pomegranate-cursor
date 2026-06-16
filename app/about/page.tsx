@@ -48,9 +48,9 @@ const values = [
       "Natural fibers that breathe, soften with wear, and age gracefully. No shortcuts, no synthetics unless they serve a purpose.",
   },
   {
-    title: "Made by hand",
+    title: "Made in South Africa",
     description:
-      "Every garment passes through one pair of hands from first cut to final press. That attention shows in the fit and the finish.",
+      "Every garment is designed and sewn in our Strand studio on the Western Cape coast — a local brand, made locally, for women who value craft over mass production.",
   },
 ];
 

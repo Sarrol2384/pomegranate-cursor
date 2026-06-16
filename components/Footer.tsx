@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Logo } from "@/components/Logo";
+import { MadeInBadge } from "@/components/MadeInBadge";
 import { site } from "@/lib/site";
 
 const footerLinks = [
@@ -36,8 +37,9 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-3">
           <div>
             <Logo />
+            <MadeInBadge className="mt-4" />
             <p className="mt-4 max-w-xs text-muted">
-              {site.tagline} Crafted with care at our Strand studio.
+              {site.tagline} Crafted with care at our Strand studio, {site.address.country}.
             </p>
             <p className="mt-4 text-sm text-muted">
               {site.address.full}
@@ -92,7 +94,10 @@ export function Footer() {
         </div>
 
         <div className="mt-16 border-t border-border pt-8 text-center text-sm text-muted">
-          <p>&copy; {new Date().getFullYear()} {site.name}. All rights reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} {site.name}. {site.madeIn}. All rights
+            reserved.
+          </p>
         </div>
       </div>
     </footer>
